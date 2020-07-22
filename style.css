@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    background-color: #0f1236;
+    height : 60px;
+}
+
+.logo{
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 20px;
+    float:left;
+    display: inline-block;
+}
+
+.logo img{
+    display: inline-block;
+}
+
+.r1,.r2{
+    color:white;
+    text-transform: uppercase;
+    float: left;
+    font-size: 14px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    margin-top:0px;
+    padding-top: 20px;
+    padding-right:10px;
+    padding-left: 30px;
+    padding-bottom: 22px;
+    transform: skewX(-10deg);
+
+   
+}
+
+.item1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.item1-content{
+    transform: skewX(10deg);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin-top: 60px;
+    margin-left: 233px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 200px;
+    width: 500px;
+}
+
+.r1:hover,.r2:hover{
+    background: #242c4c;
+}
+.item1:hover .dropdown-content{
+    display: block;
+}
+
+.item1:hover .r1{
+    background: #242c4c;
+}
+
+.item1:hover .arrow{
+    transform: rotate(-180deg) translateZ(0);
+}
+
+.dropdown1,.dropdown2 {
+    display: inline-block;
+}
+.dropdown2 {
+    margin-left: 30px;
+}
+
+.droplist{
+    list-style: none;
+    margin-left: -38px;
+}
+
+.droplist{
+    margin-top: 20px;
+}
+.droplist li{
+    display: block;
+    padding-top: 5px;
+    padding-left: 40px;
+    margin-top: 5px;
+    
+}
+
+.dropdown-content a{
+    text-transform: none !important;
+    color:black !important;
+    font-size: 13px;
+}
+.droplist a:hover{
+    color: #4e5bf7 !important;
+}
+
+.dropdown-content:hover .r1{
+    background: #242c4c !;
+}
+
+.dropdown-content t{
+    text-transform: none;
+    border-bottom: 2px solid #0f1236;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #0f1236;
+}
+
+.arrow{
+    display: inline-block;
+    margin-left: 10px;
+    height:14px;
+    transition: transform 0.5s;
+    vertical-align: middle;
+    
+}
+
+.r2::before{
+   content: '';
+    position: absolute;
+    top: 33%;
+    left: 0;
+    width: 1px;
+    height: 20px;
+    background-color: rgba(255,255,255,0.2);
